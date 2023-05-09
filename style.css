@@ -1,0 +1,297 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Styles */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+}
+ 
+a {
+text-decoration: none;
+color: #333;
+}
+
+ul {
+list-style: none; 
+} 
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px;
+}
+.inline-block {
+display: inline-block;
+vertical-align: top;
+}
+/* Header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+background-color: #fff;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+ 
+.logo {
+width: 23%;
+padding: 1%;
+}
+.navimage {
+width: 50px;
+height: 32px;
+}
+nav {
+width: 73%;
+padding: 1%;
+}  
+nav ul {
+width: 50%;
+margin-left: auto;
+}
+
+nav ul li {
+display: inline-block;
+margin-left: 20px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Hero Section */
+.heroImg {
+height: 800px;
+padding: 125px;
+background-color: #f2f2f2;
+}
+
+.content {
+width: 500px;
+margin: 0 auto;
+text-align: center;
+}
+.ritika_photo {
+  width: 100%;
+
+}
+
+
+
+
+
+.btn-download {
+margin: 20px 0
+;
+background-color: #333;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.btn-download:hover {
+background-color: #555;
+}
+
+.download-description {
+font-size: 14px;
+margin-top: 10px;
+color: #666;
+}
+  
+
+/* My UX Skills section coded using CSS flex */
+
+#my-ux-skills {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+
+#my-ux-skills section div {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0
+  );
+}
+
+#my-ux-skills section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#my-ux-skills section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* My Work Section */
+
+#work {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#work h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#work h3 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6";
+  gap: 30px;
+}
+
+.workGrid > div {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workGrid .item1 {
+  grid-area: item1;
+}
+
+.workGrid .item2 {
+  grid-area: item2;
+}
+
+.workGrid .item3 {
+  grid-area: item3;
+}
+
+.workGrid .item4 {
+  grid-area: item4;
+}
+
+.workGrid .item5 {
+  grid-area: item5;
+}
+
+.workGrid .item6 {
+  grid-area: item6;
+}
+
+.workGrid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.workGrid h4 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.workGrid p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* .workGrid button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition:background-color 0.3s ease;
+} */
+.workGrid button {
+  margin: 20px 0
+  ;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  }
+  
+  .workGrid button:hover {
+  background-color: #555;
+  }
+  
+  .download-description {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+display: inline-block;
+ vertical-align: top;
+}
+ footer li a {
+padding: 10px;
+color: #fff;
+ }
+  
+
+
+
+
+ @media only screen and (max-width: 600px) {
+.flexContainer {
+flex-direction: column;
+}
+.flexChild {
+width: 100%;
+}
+.my-work {
+grid-template-areas:
+"a a"
+"b b"
+"c c"
+"d d";
+grid-template-rows: repeat(4, auto);
+grid-template-columns: 1fr 1fr;
+}
+}
